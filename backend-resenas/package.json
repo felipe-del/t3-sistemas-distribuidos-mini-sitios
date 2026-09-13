@@ -1,0 +1,13 @@
+{
+  "name": "backend-resenas",
+  "version": "1.0.0",
+  "description": "Backend REST para el mini-sitio de Reseñas (ejercicio 2 de la Tarea 3)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

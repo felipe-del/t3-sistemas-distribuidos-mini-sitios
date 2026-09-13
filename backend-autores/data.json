@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Gabriel García Márquez",
+    "nacionalidad": "Colombiana",
+    "bio": "Escritor y periodista, premio Nobel de Literatura 1982, máximo exponente del realismo mágico."
+  },
+  {
+    "id": 2,
+    "nombre": "George Orwell",
+    "nacionalidad": "Británica",
+    "bio": "Novelista y ensayista conocido por sus críticas al totalitarismo y su prosa clara y directa."
+  },
+  {
+    "id": 3,
+    "nombre": "Antoine de Saint-Exupéry",
+    "nacionalidad": "Francesa",
+    "bio": "Aviador y escritor, autor de una de las obras más traducidas de la literatura universal."
+  }
+]

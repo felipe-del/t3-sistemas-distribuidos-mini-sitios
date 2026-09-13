@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "titulo": "Cien años de soledad",
+    "autorId": 1,
+    "editorialId": 1,
+    "anio": 1967,
+    "descripcion": "Una saga familiar que narra siete generaciones de la familia Buendía en el pueblo ficticio de Macondo."
+  },
+  {
+    "id": 2,
+    "titulo": "1984",
+    "autorId": 2,
+    "editorialId": 2,
+    "anio": 1949,
+    "descripcion": "Una distopía sobre un régimen totalitario que vigila y controla cada aspecto de la vida de sus ciudadanos."
+  },
+  {
+    "id": 3,
+    "titulo": "El principito",
+    "autorId": 3,
+    "editorialId": 3,
+    "anio": 1943,
+    "descripcion": "Un piloto varado en el desierto conoce a un pequeño príncipe que viene de otro planeta."
+  },
+  {
+    "id": 4,
+    "titulo": "Rebelión en la granja",
+    "autorId": 2,
+    "editorialId": 2,
+    "anio": 1945,
+    "descripcion": "Una fábula sobre un grupo de animales de granja que se rebelan contra su dueño humano."
+  }
+]

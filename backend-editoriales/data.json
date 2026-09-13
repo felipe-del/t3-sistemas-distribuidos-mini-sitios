@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Editorial Sudamericana",
+    "pais": "Argentina",
+    "descripcion": "Editorial fundada en 1939, histórica publicadora de literatura latinoamericana."
+  },
+  {
+    "id": 2,
+    "nombre": "Secker & Warburg",
+    "pais": "Reino Unido",
+    "descripcion": "Editorial británica reconocida por publicar obras clave de la literatura política del siglo XX."
+  },
+  {
+    "id": 3,
+    "nombre": "Gallimard",
+    "pais": "Francia",
+    "descripcion": "Una de las editoriales francesas más influyentes, fundada en 1911."
+  }
+]

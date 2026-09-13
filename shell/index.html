@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Biblioteca Virtual - Shell</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background: #efe9df;
+      color: #2c2620;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #2c2620;
+      color: #fdfaf6;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    header a.home { color: #f0b13a; text-decoration: none; font-weight: bold; }
+    nav { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    nav button {
+      background: #6b4226;
+      color: #fdfaf6;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    nav button.activo { background: #d99b1c; color: #2c2620; font-weight: bold; }
+    nav button:hover { background: #543219; }
+    nav button.activo:hover { background: #f0b13a; }
+    main { flex: 1; padding: 0.75rem; }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 10px;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="home" href="home.html">🏠 Inicio</a>
+    <nav id="nav">
+      <button data-site="libros">📚 Libros</button>
+      <button data-site="autores">✍️ Autores</button>
+      <button data-site="editoriales">🏢 Editoriales</button>
+      <button data-site="resenas">⭐ Reseñas</button>
+    </nav>
+  </header>
+  <main>
+    <iframe id="contenido" title="Contenido del mini-sitio"></iframe>
+  </main>
+
+  <script src="config.js"></script>
+  <script>
+    const iframe = document.getElementById("contenido");
+    const botones = document.querySelectorAll("#nav button");
+
+    function cargarSitio(nombre, queryParams) {
+      let url = SITE_URLS[nombre];
+      if (queryParams) {
+        const qs = new URLSearchParams(queryParams).toString();
+        url += (url.includes("?") ? "&" : "?") + qs;
+      }
+      iframe.src = url;
+      botones.forEach((b) => b.classList.toggle("activo", b.dataset.site === nombre));
+    }
+
+    botones.forEach((btn) => {
+      btn.addEventListener("click", () => cargarSitio(btn.dataset.site));
+    });
+
+    // Escucha mensajes desde los mini-sitios embebidos (p.ej. el enlace
+    // "Ver reseñas de este libro/autor/editorial") y cambia el iFrame
+    // al mini-sitio de Reseñas, ejercicio 3 de la Tarea 3.
+    window.addEventListener("message", (event) => {
+      const data = event.data;
+      if (data && data.accion === "verResenas") {
+        cargarSitio("resenas", {
+          tipo: data.tipo,
+          id: data.id,
+          ...(data.nombre ? { nombre: data.nombre } : {}),
+        });
+      }
+    });
+
+    // Sitio inicial
+    cargarSitio("libros");
+  </script>
+</body>
+</html>

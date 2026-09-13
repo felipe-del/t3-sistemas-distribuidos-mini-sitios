@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "entidadTipo": "libro",
+    "entidadId": 1,
+    "autorResena": "Marcela V.",
+    "comentario": "Una obra maestra del realismo mágico, imposible de dejar de leer.",
+    "calificacion": 5
+  },
+  {
+    "id": 2,
+    "entidadTipo": "libro",
+    "entidadId": 2,
+    "autorResena": "Luis P.",
+    "comentario": "Una advertencia vigente sobre el poder y la vigilancia.",
+    "calificacion": 5
+  },
+  {
+    "id": 3,
+    "entidadTipo": "autor",
+    "entidadId": 2,
+    "autorResena": "Diego R.",
+    "comentario": "Uno de los ensayistas más lúcidos del siglo XX.",
+    "calificacion": 4
+  },
+  {
+    "id": 4,
+    "entidadTipo": "editorial",
+    "entidadId": 1,
+    "autorResena": "Andrea C.",
+    "comentario": "Excelente catálogo de literatura latinoamericana.",
+    "calificacion": 4
+  },
+  {
+    "id": 5,
+    "entidadTipo": "editorial",
+    "entidadId": 2,
+    "autorResena": "Isaac",
+    "comentario": "s",
+    "calificacion": 5
+  }
+]

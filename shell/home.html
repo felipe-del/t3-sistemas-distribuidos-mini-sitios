@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tarea 3 - Biblioteca Virtual</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #2c2620, #543219);
+      color: #fdfaf6;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .card {
+      background: rgba(253, 250, 246, 0.06);
+      border: 1px solid rgba(253, 250, 246, 0.2);
+      border-radius: 14px;
+      padding: 2.5rem 2rem;
+      max-width: 560px;
+    }
+    h1 { margin-top: 0; }
+    p { color: #e9ddc9; line-height: 1.5; }
+    ul { text-align: left; display: inline-block; color: #e9ddc9; }
+    a.btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #d99b1c;
+      color: #2c2620;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    a.btn:hover { background: #f0b13a; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>📚 Biblioteca Virtual</h1>
+    <p>
+      Aplicación compuesta por un <strong>shell</strong> que integra cuatro
+      mini-sitios independientes, cada uno con su propio backend:
+    </p>
+    <ul>
+      <li>Libros (JavaScript vanilla + fetch)</li>
+      <li>Autores (Vue 3)</li>
+      <li>Editoriales (React)</li>
+      <li>Reseñas (JavaScript vanilla + fetch) — mini-sitio nuevo (ejercicio 2)</li>
+    </ul>
+    <p>Cada mini-sitio se carga dentro de un iFrame y puede navegarse de forma independiente.</p>
+    <a class="btn" href="index.html">Entrar a la aplicación</a>
+  </div>
+</body>
+</html>
