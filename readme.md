@@ -1,7 +1,7 @@
 # Tarea 3 — Biblioteca Virtual
 
 **Nombre:** Isaac Felipe Brenes Calderón
-**Dirección donde quedó publicada la tarea:** :)
+**Dirección donde quedó publicada la tarea:** https://thunderous-mousse-22289d.netlify.app/home
 
 ## Descripción del proyecto
 
