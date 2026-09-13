@@ -1,7 +1,7 @@
 # Tarea 3 — Biblioteca Virtual
 
-**Nombre:** [ESCRIBA AQUÍ SU NOMBRE COMPLETO]
-**Dirección donde quedó publicada la tarea:** [ESCRIBA AQUÍ LA URL DEL SHELL YA DESPLEGADO]
+**Nombre:** Isaac Felipe Brenes Calderón
+**Dirección donde quedó publicada la tarea:** :)
 
 ## Descripción del proyecto
 
